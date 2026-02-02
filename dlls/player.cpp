@@ -3532,9 +3532,8 @@ void CBasePlayer::SelectLastItem( void )
 		m_pActiveItem->pev->oldbuttons = 1;
 		m_pActiveItem->Deploy();
 		m_pActiveItem->pev->oldbuttons = 0;
+		m_pActiveItem->UpdateItemInfo();
 	}
-
-	m_pActiveItem->UpdateItemInfo();
 }
 
 //==============================================
