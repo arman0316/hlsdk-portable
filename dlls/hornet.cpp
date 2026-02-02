@@ -693,11 +693,11 @@ void CEnvHornet::FlyThink()
 		const float yawDiff = UTIL_AngleDiff(targetYaw, currentYaw);
 		if (yawDiff < 0)
 		{
-			pev->avelocity.y = min(-pev->yaw_speed, yawDiff);
+			pev->avelocity.y = Q_min(-pev->yaw_speed, yawDiff);
 		}
 		else
 		{
-			pev->avelocity.y = max(pev->yaw_speed, yawDiff);
+			pev->avelocity.y = Q_max(pev->yaw_speed, yawDiff);
 		}
 		pev->velocity = gpGlobals->v_forward * pev->speed;
 

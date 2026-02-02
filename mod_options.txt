@@ -22,5 +22,5 @@ SERVER_LIBRARY_NAME=delta_particles # Default server dll name
 
 # Keep disabled until liblist.gam uses different name for OSX and Linux (e.g. Counter-Strike uses mp.dll on Windows and cs.so on Linux)
 #SERVER_LIBRARY_NAME_OSX=delta_particles # Override server dll name for macOS
-#SERVER_LIBRARY_NAME_LINUX=delta_particles # Override server dll name for Linux and other systems
+SERVER_LIBRARY_NAME_LINUX=delta # Override server dll name for Linux and other systems
 
